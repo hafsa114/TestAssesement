@@ -6,7 +6,7 @@ This is a UI automation using Cypress + JavaScript with Cucumber BDD framework
 
 2. In the root directory of the project, run the following command:
 
-docker-compose up 
+`docker-compose up`
 
   To make containers up and running and accessible to the UI
 
