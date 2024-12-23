@@ -1,0 +1,44 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "cypress javascript solution for AI challeneg",
+  "main": "e2e.js",
+  "scripts": {
+    "cypress:run": "cypress run",
+    "generate-report": "node cypress.report.js",
+    "execute:report": "npm run cypress:run && npm run generate-report"
+  },
+  "keywords": [
+    "cypress",
+    "cucumber"
+  ],
+  "author": "Hafsa Shaik",
+  "license": "ISC",
+  "dependencies": {
+    "@cypress/webpack-preprocessor": "^6.0.2",
+    "axios": "^1.7.9",
+    "cypress": "^13.17.0",
+    "dayjs": "^1.11.13",
+    "fs": "^0.0.1-security",
+    "moment": "^2.30.1",
+    "save": "^2.9.0",
+    "save-dev": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^21.0.3",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4",
+    "cucumber-html-reporter": "^6.0.0",
+    "multiple-cucumber-html-reporter": "^3.8.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/support/step_definitions/**/*.js",
+    "json": {
+      "enabled": true,
+      "output": "cypress/reports/json/cucumber-report.json"
+    },
+    "messages": {
+      "enabled": true,
+      "output": "cypress/reports/messages/cucumber-messages.ndjson"
+    }
+  }
+}

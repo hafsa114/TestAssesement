@@ -1,0 +1,423 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "qna-service-functionality;verify-file-upload-is-success",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Verify File Upload is Success",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "User navigates to the QNAService page",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 289000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "User Select a single document by clicking on the Choose file input",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 104000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "User Click on the Upload icon",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 98000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Document must uploaded successfully",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User deletes the unprocessed File Successfully",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 97000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "qna-service-functionality;verify-file-is-processed",
+        "keyword": "Scenario Outline",
+        "line": 24,
+        "name": "Verify File is processed",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "User navigates to the QNAService page",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 214000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "User Select a single document by clicking on the Choose file input",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "User Click on the Upload icon",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "Document is in unprocessed state",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "User clicks the play button",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 133000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "Document must be processed successfully",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "User enter \"What is the type?\" in the text box",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 406000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "click on the Ask Question button to get the answer",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 138000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "\"The type of the file is a text file\" will be displayed in the Answer section",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4779000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "User click on expand to see references",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 148000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "User can see the source of the answer",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "User deletes File Successfully",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 189000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "qna-service-functionality;verify-file-is-processed",
+        "keyword": "Scenario Outline",
+        "line": 25,
+        "name": "Verify File is processed",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "User navigates to the QNAService page",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 125000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "User Select a single document by clicking on the Choose file input",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "User Click on the Upload icon",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "Document is in unprocessed state",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "User clicks the play button",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 97000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "Document must be processed successfully",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "User enter \"What is the content of file?\" in the text box",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 548000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "click on the Ask Question button to get the answer",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 77000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "\"textformat\" will be displayed in the Answer section",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4523000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "User click on expand to see references",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 105000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "User can see the source of the answer",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "User deletes File Successfully",
+            "match": {
+              "location": "webpack://cypress/cypress/support/step_definitions/qnaServiceSteps.js:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 112000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "qna-service-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "QNA-Service Functionality",
+    "tags": [],
+    "uri": "cypress\\e2e\\features\\QNAService.feature"
+  }
+]
