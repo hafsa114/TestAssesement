@@ -5,11 +5,11 @@ This is a UI automation using Cypress + JavaScript with Cucumber BDD framework
 1. Pre-requisite  - NodeJs , Docker(to execute and run the containers) , IDE(VS Code / IntelliJ)
 
 2. In the root directory of the project, run the following command:
-```bash
+
 docker-compose up 
 
   To make containers up and running and accessible to the UI
-```
+
 3. Access the Web UI using following URL - http://localhost:8000
 
 4. Unzip the submitted code.
